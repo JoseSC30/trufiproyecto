@@ -38,12 +38,14 @@
                                         
 										<th>Nombre</th>
 										<th>Ci</th>
+<!--
 										<th>Direccion</th>
-										<th>Fecha Nacimiento</th>
+                                        <th>Fecha Nacimiento</th>
 										<th>Fecha Afiliacion</th>
 										<th>Sexo</th>
-										<th>Licencia</th>
 										<th>Garantia</th>
+-->
+										<th>Licencia</th>
 
                                         <th></th>
                                     </tr>
@@ -55,12 +57,14 @@
                                             
 											<td>{{ $chofere->nombre }}</td>
 											<td>{{ $chofere->ci }}</td>
+<!--
 											<td>{{ $chofere->direccion }}</td>
 											<td>{{ $chofere->fnacimiento }}</td>
 											<td>{{ $chofere->fafiliacion }}</td>
 											<td>{{ $chofere->sexo }}</td>
-											<td>{{ $chofere->licencia }}</td>
 											<td>{{ $chofere->garantia }}</td>
+-->
+											<td>{{ $chofere->licencia }}</td>
 
                                             <td>
                                                 <form action="{{ route('choferes.destroy',$chofere->id) }}" method="POST">

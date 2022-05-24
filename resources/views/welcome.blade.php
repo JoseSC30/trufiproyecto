@@ -25,13 +25,15 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Ir a la Plataforma</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Ingreso Administrador</a>
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Ingreso Empleado</a>
 
                         @if (Route::has('register'))
+
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+
                         @endif
                     @endauth
                 </div>
@@ -39,6 +41,9 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <!-- IMAGEN DE UN TRUFI -->
+                
+                <img src="imagenes/titulotrufi.png" alt="es la imagen del titulo" width="480" height="280" >
+                
                 <img src="imagenes/trufi.png" alt="es la imagen de una cafe" width="540" height="340" >
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
@@ -47,18 +52,15 @@
                         <!-- CONTENIDO DEL MEDIO-->
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold">
-                                    <a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">
-                                        Admin: admin@mail.com
-                                    </a>
-                                </div>
-                            </div>
-
+                            
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Contrasena: 12345678
+                                    Admin: admin@mail.com 
+                                </div>
+                            </div>
+                            <div class="ml-12">
+                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                    Contrasena: 1234casa
                                 </div>
                             </div>
                         </div>
@@ -67,7 +69,7 @@
        
                     </div>
                 </div>
-
+<!--
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">
@@ -93,6 +95,7 @@
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
+-->
             </div>
         </div>
     </body>

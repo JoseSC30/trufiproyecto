@@ -48,7 +48,7 @@ class MultaController extends Controller
         $multa = Multa::create($request->all());
 
         return redirect()->route('multas.index')
-            ->with('success', 'Multa created successfully.');
+            ->with('success', 'Nueva Multa registrada correctamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class MultaController extends Controller
         $multa->update($request->all());
 
         return redirect()->route('multas.index')
-            ->with('success', 'Multa updated successfully');
+            ->with('success', 'Datos de la Multa actualizados con exito.');
     }
 
     /**
@@ -104,6 +104,6 @@ class MultaController extends Controller
         $multa = Multa::find($id)->delete();
 
         return redirect()->route('multas.index')
-            ->with('success', 'Multa deleted successfully');
+            ->with('success', 'Multa eliminada.');
     }
 }

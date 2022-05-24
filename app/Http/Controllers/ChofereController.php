@@ -48,7 +48,7 @@ class ChofereController extends Controller
         $chofere = Chofere::create($request->all());
 
         return redirect()->route('choferes.index')
-            ->with('success', 'Chofere created successfully.');
+            ->with('success', 'Nuevo Chofer registrado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class ChofereController extends Controller
         $chofere->update($request->all());
 
         return redirect()->route('choferes.index')
-            ->with('success', 'Chofere updated successfully');
+            ->with('success', 'Datos del Chofer actualizados con exito.');
     }
 
     /**
@@ -104,6 +104,6 @@ class ChofereController extends Controller
         $chofere = Chofere::find($id)->delete();
 
         return redirect()->route('choferes.index')
-            ->with('success', 'Chofere deleted successfully');
+            ->with('success', 'Información del Chofer eliminado con exito.');
     }
 }

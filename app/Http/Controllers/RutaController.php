@@ -48,7 +48,7 @@ class RutaController extends Controller
         $ruta = Ruta::create($request->all());
 
         return redirect()->route('rutas.index')
-            ->with('success', 'Ruta created successfully.');
+            ->with('success', 'Nueva Ruta registrada con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class RutaController extends Controller
         $ruta->update($request->all());
 
         return redirect()->route('rutas.index')
-            ->with('success', 'Ruta updated successfully');
+            ->with('success', 'Información actualizada con exito.');
     }
 
     /**
@@ -104,6 +104,6 @@ class RutaController extends Controller
         $ruta = Ruta::find($id)->delete();
 
         return redirect()->route('rutas.index')
-            ->with('success', 'Ruta deleted successfully');
+            ->with('success', 'Ruta eliminada satisfactoriamente.');
     }
 }
